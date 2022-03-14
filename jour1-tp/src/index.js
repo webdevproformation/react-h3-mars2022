@@ -1,12 +1,12 @@
-import React from 'react';
+import React from 'react'; // ./ => dans le dossier node_modules
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './App'; // c'est dans le dossier src => bundler webpack 
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App /> {/** App() */}
   </React.StrictMode>,
   document.getElementById('root')
 );
