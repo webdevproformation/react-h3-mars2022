@@ -6,3 +6,6 @@ export const Huitieme = () => {
 
     return <img src="https://via.placeholder.com/200x100" alt=""  onClick={handleClick}/>
 }
+
+// useState (etat local du composant )
+//rdv 15h15 !!!
