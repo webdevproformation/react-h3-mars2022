@@ -2,7 +2,7 @@ import { useState } from "react"
 
 export const Dixieme = () => {
 
-    const [state, setState] = useState(10);
+    const [state, setState] = useState(10); // primitive string / number / boolean
 
     return <>
         <button onClick={() => setState(state - 2)}>Diminuer - 2</button>
