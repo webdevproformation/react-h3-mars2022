@@ -3,14 +3,19 @@ export const Quatrieme = () => {
         { id : 1 , titre : "Article1" , dt_creation : new Date() },
         { id : 2 , titre : "Article2" , dt_creation : new Date() }
     ]
+    function dateFr(date){
+        return `
+            ${date.getDate()}/${ ( "0" + ( date.getMonth() +1)  ).slice(-2) }/${date.getFullYear()}`
+    }
+
     return <>
         { data.map( (article , index) => {
             return <article key={index}>
                 <h2>{article.titre}</h2>
-                <time>publié le { `${article.dt_creation.getDate()}/${ ( "0" + ( article.dt_creation.getMonth() +1)  ).slice(-2) }/${article.dt_creation.getFullYear()}` }</time>
+                <time>publié le { dateFr(article.dt_creation)} </time>
             </article>
         } )}
     </>
 }
 
-// "012".slice(-2) => 12
+// "011".slice(-2) => 12
