@@ -5,6 +5,7 @@ import { Deuxieme } from './composants/Deuxieme';
 import { Troisieme } from './composants/Troisieme';
 import { Quatrieme } from './composants/Quatrieme';
 import { Cinquieme } from './composants/Cinquieme';
+import { Sixieme } from './composants/Sixieme';
 
 
 
@@ -18,6 +19,7 @@ function App() {
 
   return (
     <div>
+      <Sixieme  />
       <h1>je m'appelle {nom}</h1>
       <ul>
           <li>j'ai { age + 20 }  ans  </li>
