@@ -10,6 +10,9 @@ import { Septieme } from './composants/Septieme';
 import { Huitieme } from './composants/Huitieme';
 import { Neuvieme } from './composants/Neuvieme';
 import { Dixieme } from './composants/Dixieme';
+import { Onzieme } from './composants/Onzieme';
+import { Douzieme } from './composants/Douzieme';
+import { Treizieme } from './composants/Treizieme';
 
 
 
@@ -23,6 +26,9 @@ function App() {
 
   return (
     <div>
+      <Treizieme />
+      <Douzieme />
+      <Onzieme />
       <Dixieme />
       <hr />
       <Neuvieme />
