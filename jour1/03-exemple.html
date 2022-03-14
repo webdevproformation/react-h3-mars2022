@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = 10; // closure
+    </script>
+    <script>
+        function toto(){
+            let a = "bonjour"
+            console.log(a)
+        }
+        toto() ;
+        // toto.add = function(){}
+
+       /*  "use strict ";
+        calcul : number = 2;
+        <string>calcul   = "bonjour" */
+        (function(a){
+            console.log(a)
+            const tata = "comment allez vous ??"
+            window.tata = tata
+        })("coucou")
+
+        console.log(window.tata)
+        console.log(tata)
+
+        // IIFE => Immediately Invoqued Function Express 
+
+        +function(){
+            console.log("salut les amis !")
+        }()
+
+        // à partir de la version 6 de Javascript ES6 => 2015 
+
+    </script>
+
+    <script type="module">
+        export let a = "coucou";
+        // si j'ai besoin d'utiliser une variable dans un autre script 
+        // définir de manière EXPLICITE 
+
+
+    </script>
+     <script type="module">
+        import {a} from "."
+       console.log(a)
+    </script>
+</body>
+</html>
+
+<!--
+    cas pratique :
+    créer un fichier 02-exo.html 
+    appeler un fichier  data.js
+    dans le fichier data.js => créer un tableau [1,2, 3,4]
+
+    importer le fichier data.js via la système de module ES6 dans le fichier 02-exo.html
+    et afficher dans la somme des valeurs du tableau dans la console 10 
+
+    dans le dossier public 
+
+-->

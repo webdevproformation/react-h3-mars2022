@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // manière historique 
+        var premier = "bonjour";
+
+        // => pas bien 
+        var premier = 12 ;
+        function premier (){}
+        // attention aucune erreur 
+
+        // ES6 => 2015 
+        // const let 
+
+        const a = 12 ; 
+
+        //const a = "bonjour" ; //  SyntaxError: redeclaration of const a
+        // a = "coucou" ; //  TypeError: invalid assignment to const 'a'
+        //a = 22 ; //  TypeError: invalid assignment to const 'a'
+        // function a(){ } // SyntaxError: redeclaration of const a
+
+        // const permet de protéger le TYPE DE la valeur 
+
+        const b = [1] ; 
+        //b = "toto";  // erreur
+        b[0]= "bonjour" ; // pas d'erreur 
+        console.log(b)
+
+        const c = [1] ; 
+        Object.freeze(c) ; 
+        c[0] = "coucou"
+        console.log(c)
+
+        // -------------------- 
+
+        let d = 12 ; 
+        //let d = "tata" // Uncaught SyntaxError: redeclaration of let d
+        d = 1000 ;
+        d = 1_000 ;
+        d = "toto" ; 
+        d = [];
+        d = {}
+        d = 10 ;
+
+        console.log(d * 3)
+
+        console.log(calcul); // undefined
+
+        var calcul = 12 ; 
+
+        division() // hoisting 
+
+        function division(){
+
+        }
+
+        division()
+    </script>
+</body>
+</html>
