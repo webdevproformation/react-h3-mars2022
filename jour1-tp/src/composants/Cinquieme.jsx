@@ -14,6 +14,5 @@ export const Cinquieme = ( ) => {
         {/** troisième et dernière syntaxe */}
         {verif ? <p>la variable verif est vraie méthode 3</p> : ""}
     </>
-
 }
 
