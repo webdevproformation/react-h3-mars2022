@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import { premier as Premier } from './composants/Premier';
 import { Deuxieme } from './composants/Deuxieme';
+import { Troisieme } from './composants/Troisieme';
+
 
 
 //cd jour1-tp 
@@ -22,6 +24,7 @@ function App() {
       <Premier />
       <Premier></Premier>
       <Deuxieme />
+      <Troisieme />
     </div>
   );
 }
