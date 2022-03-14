@@ -1,5 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
+import { premier as Premier } from './composants/Premier';
+import { Deuxieme } from './composants/Deuxieme';
+
 
 //cd jour1-tp 
 // npm start
@@ -16,6 +19,9 @@ function App() {
           <li>j'ai { age + 20 }  ans  </li>
           <li> je suis une {formation} </li> 
       </ul>
+      <Premier />
+      <Premier></Premier>
+      <Deuxieme />
     </div>
   );
 }
