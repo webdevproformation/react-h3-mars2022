@@ -3,6 +3,7 @@ import './App.css';
 import { premier as Premier } from './composants/Premier';
 import { Deuxieme } from './composants/Deuxieme';
 import { Troisieme } from './composants/Troisieme';
+import { Quatrieme } from './composants/Quatrieme';
 
 
 
@@ -23,6 +24,7 @@ function App() {
       </ul>
       <Premier />
       <Premier></Premier>
+      <Quatrieme />
       <Deuxieme />
       <Troisieme />
     </div>
