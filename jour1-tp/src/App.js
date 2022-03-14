@@ -7,6 +7,7 @@ import { Quatrieme } from './composants/Quatrieme';
 import { Cinquieme } from './composants/Cinquieme';
 import { Sixieme } from './composants/Sixieme';
 import { Septieme } from './composants/Septieme';
+import { Huitieme } from './composants/Huitieme';
 
 
 
@@ -20,6 +21,7 @@ function App() {
 
   return (
     <div>
+      <Huitieme />
       <Septieme />
       <Sixieme  />
       <h1>je m'appelle {nom}</h1>
