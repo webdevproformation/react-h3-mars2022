@@ -6,6 +6,7 @@ export const Quatrieme = () => {
     function dateFr(date){
         return `
             ${date.getDate()}/${ ( "0" + ( date.getMonth() +1)  ).slice(-2) }/${date.getFullYear()}`
+            // %d/%m/%Y n'existe pas en Javascript 
     }
 
     return <>

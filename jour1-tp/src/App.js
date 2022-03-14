@@ -4,6 +4,7 @@ import { premier as Premier } from './composants/Premier';
 import { Deuxieme } from './composants/Deuxieme';
 import { Troisieme } from './composants/Troisieme';
 import { Quatrieme } from './composants/Quatrieme';
+import { Cinquieme } from './composants/Cinquieme';
 
 
 
@@ -22,6 +23,7 @@ function App() {
           <li>j'ai { age + 20 }  ans  </li>
           <li> je suis une {formation} </li> 
       </ul>
+      <Cinquieme />
       <Premier />
       <Premier></Premier>
       <Quatrieme />
