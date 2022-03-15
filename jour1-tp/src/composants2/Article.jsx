@@ -1,5 +1,6 @@
 import {useState} from "react"
 import { Commentaire } from "./Commentaire"
+import { FormCommentaire } from "./FormCommentaire"
 
 export const Article = () => {
     const [data , setData] = useState({
@@ -14,6 +15,7 @@ export const Article = () => {
     return <article className="col-4">
         <h2>{data.titre}</h2>
         <p>{data.contenu}</p>
+        <FormCommentaire setData={setData} />
         <ul>
             {data.commentaires.map( (commentaire, index) => {
                 return <Commentaire key={index} data={commentaire} />
