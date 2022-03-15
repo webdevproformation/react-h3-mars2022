@@ -1,7 +1,7 @@
-import {useState, useEffect } from "react"
+import { useState, useEffect } from "react"
 
 export const Last = () => {
-    const [profils , setProfils] = useState([]) 
+    const [profils , setProfils] = useState([]) ;
     useEffect(() => {
         fetch("https://jsonplaceholder.typicode.com/users")
         .then(reponse => reponse.json())
