@@ -11,7 +11,7 @@ export const FormCommentaire = (props) => {
         }
     }
     return <input type="text" 
-        onKeyUp={handleKeyUp} 
+        onKeyUp={ handleKeyUp } 
         onChange={(e) => setCommentaire(e.target.value)} 
         value={commentaire}
         className="form-control my-3" 
