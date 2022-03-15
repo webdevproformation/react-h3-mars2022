@@ -19,7 +19,7 @@ export const Article = () => {
         <h2>{data.titre}</h2>
         <p>{data.contenu}</p>
         <Dislike setData={setData} />
-        <span class="badge bg-danger">{data.like}</span>
+        <span className="badge bg-danger">{data.like}</span>
         <Like  setData={setData} /> 
         <FormCommentaire setData={setData} />
         <ul>

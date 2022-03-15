@@ -3,10 +3,22 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App'; // c'est dans le dossier src => bundler webpack 
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter , Routes , Route } from "react-router-dom"
+import {Home} from "./composants2/Home"
+import {Form} from "./composants2/Form"
 
 ReactDOM.render(
   <React.StrictMode>
-    <App /> {/** App() */}
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />}>
+          <Route index  element={<Home />}/>
+          <Route path="contact" element={<Form />} />
+        </Route>
+        
+        {/** App() */}
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
