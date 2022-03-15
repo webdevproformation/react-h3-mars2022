@@ -15,7 +15,7 @@ export const Form = () => {
         e.preventDefault(); //  bloquer le rechargement de page 
         const {email, commentaire} = form ;
         if(email.length > 0 && commentaire.length > 0){
-            console.log(form);
+            //console.log(form);
             setForm({email : "" , commentaire : ""}) // vider le formulaire
         }else {
             alert("veuillez compléter les deux champs ")

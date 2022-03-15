@@ -38,3 +38,12 @@ cas pratique 2 =>
 col => qui va contenir 1 formulaire 
 contient 2 champs => email / commentaire / bouton pour soumettre le formulaire
 
+
+cas pratique 3 
+créer le composant Exo
+ce composant contient un formulaire ayant 3 champs 
+input pour mettre son nom
+input pour mettre son age
+un menu déroulant select pour sélectionner son pays => france / allemagne / belgique
+
+récupérer les différentes valeurs mise dans le formulaire du composant dans le state  
