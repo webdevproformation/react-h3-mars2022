@@ -3,7 +3,7 @@ export const Like = (props) => {
         props.setData((prevData) => {
             let nb = prevData.like ;
             nb++ ;
-            return {...prevData , like : nb}
+            return {...prevData , like : nb }
         })
     }
     return <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-hand-thumbs-up" viewBox="0 0 16 16" onClick={handleClick}>

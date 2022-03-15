@@ -16,4 +16,6 @@ function Parent(){
 https://icons.getbootstrap.com/icons/hand-thumbs-up/
 // une fois qu'il a cliqué augmenter le nombre de like dans le parent 
 
+// cas pratique 
+// créer un nouveau composant qui permet de réduire le nombre de Like
 
