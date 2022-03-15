@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem, ipsum dolor.</p>
+    <script>
+        const requete = {
+            url : "http...",
+            status : 200 ,
+            origin : "123.123.123",
+            port : 80 ,
+            navigateur : {
+                browser : "FF",
+                version : 10 ,
+                societe : "modzilla",
+                annee : 2018
+            }
+        }
+
+        console.log(requete.navigateur.version)
+        console.log(requete.navigateur.browser)
+        // descruturer => prendre une propriété qui est dans un objet et le transformer en variable 
+
+        const {version, browser : toto , societe, annee} = requete.navigateur
+
+        console.log(version);
+        console.log(toto);
+        console.log(annee);
+
+        const p = document.querySelector("p")
+        console.log(p);
+        const {id , lastChild , previousSibling} = p
+        console.log(previousSibling)
+
+        const user = {
+            nom : "Alain" ,
+            age : 20
+        }
+
+        const label = "montant" 
+
+        const fonction = "()=> {console.log('tata')}"
+        const panier = {
+            [label] : eval(fonction)
+        }
+
+        /*
+        const panier = {
+            ["montant"] : 50
+        }
+        const panier = {
+            montant : 50
+        }
+        
+        */
+
+    </script>
+</body>
+</html>
