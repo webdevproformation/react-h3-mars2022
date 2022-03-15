@@ -13,8 +13,7 @@ import { Dixieme } from './composants/Dixieme';
 import { Onzieme } from './composants/Onzieme';
 import { Douzieme } from './composants/Douzieme';
 import { Treizieme } from './composants/Treizieme';
-
-
+import { Last } from './composants/Last'
 
 //cd jour1-tp 
 // npm start
@@ -26,6 +25,8 @@ function App() {
 
   return (
     <div>
+      <Last />
+      <hr />
       <Treizieme />
       <Douzieme />
       <Onzieme />
