@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.App{
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+nav {
+  padding: 20px;
+  background: #4D77FF;
+}
+nav ul{
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li:nth-child(2){
+  margin-left: auto;
+}
+nav ul li a{
+  color : white;
+  margin-right: 20px;
+  text-decoration: none;
+}
