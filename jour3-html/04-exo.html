@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const users = [{id : 1 , nom : "Alain"} , {id : 2 , nom : "Béatrice"} ]
+        
+        const userHTML = users.map((user) => {
+            return "<p>" + user.nom + "<button>modifier " + user.id + "</button></p>" 
+        })
+        document.querySelector("body").innerHTML = userHTML;
+
+        const etudiants = [
+            {nom : "alain" , note : 5},
+            {nom : "béatrice" , note : 12},
+            {nom : "charles" , note : 8}
+        ]
+
+        // récupérer uniquement les étudiants qui ont un note > 10
+
+        // <p>alain <button>note 20</button></p>
+        // <p>béatrice <button>note 12</button></p>
+
+        // insert dans le DOM 
+
+        const etudiantAyantMoyenne = etudiants.filter(function(etudiant){ return etudiant.note > 10})
+        const etudiantAyantMoyenneHTML =  etudiantAyantMoyenne.map(function(etudiant){
+            return" <p>"+ etudiant.nom +" <button>note "+ etudiant.note+ "</button></p>"
+        })
+        document.querySelector("body").innerHTML = etudiantAyantMoyenneHTML ; 
+
+        // 3 instructions 
+
+        // 1 seule
+        document.querySelector("body").innerHTML = 
+                etudiants
+                .filter(function(etudiant){ return etudiant.note > 10})
+                .map(function(etudiant){
+                        return" <p>"+ etudiant.nom +" <button>note "+ etudiant.note+ "</button></p>"
+                    })
+    </script>
+</body>
+</html>
