@@ -10,6 +10,7 @@ export const Menu = ( ) => {
             return {...prevProfil , isLogged : false}
         })
         navigate("/connexion");
+        localStorage.removeItem("profil") // vide le localStorage 
     }
     return <nav>
         <ul>

@@ -15,7 +15,9 @@ export const Connexion = () => {
         if(form.login === profil.login && form.password === profil.password){
             // alert("vos identifiants sont corrects !!")
             profil.setProfil((prevProfil) => {
-                return {...prevProfil , isLogged : true}
+                const cloneProfil = {...prevProfil , isLogged : true}
+                localStorage.setItem("profil" , JSON.stringify(cloneProfil))
+                return cloneProfil; 
             })
             navigate("/admin"); // <?php header("Location:admin.php")
             console.log(profil)
