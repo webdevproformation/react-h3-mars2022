@@ -1,6 +1,7 @@
 import { Menu } from "./composants/Menu";
 import { Outlet } from "react-router-dom";
 import { UserProvider } from "./context/userContext";
+import { ArticleProvider } from "./context/articleContext"
 
 function App() {
  
@@ -8,7 +9,9 @@ function App() {
     <div className="App">
         <UserProvider>
           <Menu />
-          <Outlet />
+          <ArticleProvider>
+            <Outlet />
+          </ArticleProvider>
         </UserProvider>
     </div>
   );

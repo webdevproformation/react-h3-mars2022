@@ -55,3 +55,9 @@ input[type="submit"]{
   border-radius: 5px;
   background: none;
 }
+
+.articles{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap : 20px;
+}

@@ -15,6 +15,7 @@ ReactDOM.render(
             <Route index element={<Home />}  />
             <Route path="connexion" element={<Connexion />} />
             <Route path="admin" element={<Admin />} />
+            <Route path="*" element={ <h1>Erreur 404</h1>  } />
         </Route>
       </Routes>
     </BrowserRouter>
