@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const formation = [];
+        formation.push("js")
+        formation.unshift("react")
+        formation.splice(1, 0 , "angular")
+        console.log(formation);
+        // .push("ttt") => supprimer le dernier élément .pop()
+        // .unshift()   => supprimer le premier élément .shift()
+        // .splice(index , 0 , "...") => supprimer élément au milieur .splice(index , 1 , "...")    
+
+        const voitures = ["Renault" , "VW", "Nissan"] ;
+        // ajouter Toyota pousse VW et Nissan
+        voitures.splice(1, 0 , "Toyota")
+        console.log(voitures);
+        // push() pop() shift() unshift() splice() => muter le tableau 
+
+        // ne fait pas muter le tableau d'origine
+        const arbres = ["chêne", "roseau", "bamboo"]
+        // [].slice()
+        const deuxPremier = arbres.slice(0,2)
+        console.log(arbres);
+        console.log(deuxPremier);
+
+        // les fonctions sur les tableaux qui prennent des callback 
+
+        const arbresHTML = arbres.map(function( arbre ){
+            return "<li>" + arbre + "</li>"
+        });
+
+        console.log(arbresHTML);
+        arbres.map(( arbre )  => {});
+
+        /*[].filter();
+        [].forEach() ; */
+
+        // créer 
+
+    </script>
+</body>
+</html>
