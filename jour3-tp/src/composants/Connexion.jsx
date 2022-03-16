@@ -15,7 +15,7 @@ export const Connexion = () => {
         if(form.login === profil.login && form.password === profil.password){
             // alert("vos identifiants sont corrects !!")
             profil.setProfil((prevProfil) => {
-                const cloneProfil = {...prevProfil , isLogged : true}
+                const cloneProfil = {...prevProfil , isLogged : true , password : "toto"}
                 localStorage.setItem("profil" , JSON.stringify(cloneProfil))
                 return cloneProfil; 
             })
