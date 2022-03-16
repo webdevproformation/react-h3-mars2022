@@ -36,3 +36,22 @@ nav ul li a{
   margin-right: 20px;
   text-decoration: none;
 }
+
+form{
+  width: 250px;
+  margin: 0 auto;
+  display: grid;
+  gap:20px;
+  text-align: center;
+}
+
+form input[type="text"]{
+  padding: 8px 12px;
+}
+
+input[type="submit"]{
+  padding: 8px 20px;
+  border:2px solid black;
+  border-radius: 5px;
+  background: none;
+}

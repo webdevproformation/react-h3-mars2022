@@ -1,14 +1,15 @@
 import { Menu } from "./composants/Menu";
 import { Outlet } from "react-router-dom";
+import { UserProvider } from "./context/userContext";
 
 function App() {
  
   return (
     <div className="App">
-        <Menu />
-        <Outlet />
-
-       
+        <UserProvider>
+          <Menu />
+          <Outlet />
+        </UserProvider>
     </div>
   );
 }

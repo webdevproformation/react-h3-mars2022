@@ -7,7 +7,6 @@ import { BrowserRouter , Routes, Route } from "react-router-dom"
 import { Home } from "./composants/Home"
 import { Connexion } from "./composants/Connexion"
 import { Admin } from "./composants/Admin"
-
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
