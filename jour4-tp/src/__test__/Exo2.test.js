@@ -9,4 +9,5 @@ describe("tester le composant Exo2" , () => {
         fireEvent.click(btns[1]); // clique sur le 2ème bouton dans l'écran
         expect(container.textContent).not.toMatch(/Produit 2/);
     })
-}) 
+})
+

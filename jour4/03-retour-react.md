@@ -53,3 +53,11 @@ que cette balise contient bien le texte "lorem ipsum"
 // cliquer via FireEvent sur la bouton de l'article ayant l'id 2 
 // vérifier que le produit 2 n'est plus présent dans le DOM 
 
+// --------------------------
+
+Dans le composant Exo ajouter un nouveau test 
+effectuer deux insertions 
+
+supprimer le dernier 
+verifier que seul le premier est présent dans le DOM 
+
