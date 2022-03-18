@@ -25,12 +25,12 @@ remplir la div avec les résultats saisis !
 
 --------------------------------
 
-créer un nouveau composant  Exo 2
+créer un nouveau composant  Exo2
 
 state resultat = [{id : 1 , nom : "Produit 1" },{id : 2 , nom : "Produit 2" } ]
 
 afficher dans la vue du composant les différents produits 
-.map()
+via un .map()
 
 ajouter pour chaque produit un bouton de suppression 
 
