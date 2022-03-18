@@ -19,6 +19,5 @@ describe("exécuter le composant Exo et soumettre son formulaire" , () => {
         expect(resultat.textContent).toMatch(/alain/)
         expect(resultat.textContent).toMatch(/alain@yahoo.fr/)
         expect(resultat.textContent).toMatch(/commentaire/)
-
     })
 })
