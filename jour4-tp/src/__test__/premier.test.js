@@ -1,4 +1,4 @@
-import { add , valeurAbsolue } from "../lib/crud"
+import { add , valeurAbsolue, fizzBuzz } from "../lib/crud"
 
 // réaliser un test unitaire
 function addition( a, b  ){
@@ -12,6 +12,38 @@ function majuscule(text){
     if(text.length === 0) return "" ;
     return `${text[0].toUpperCase()}${text.slice(1,text.length).toLowerCase()}`
 }
+
+describe("fonction fizzBuzz" , () => {
+    test("si je lui donne un multiple de 3 , doit retourner Fizz" , () => {
+        const data = [3,6,9,12]
+        data.forEach(nb => {
+            const resultat = fizzBuzz(nb)
+            expect(resultat).toBe("Fizz")
+        })
+    })
+    test("si je lui donne un multiple de 5 , doit retourner Buzz" , () => {
+        const data = [5,10,20,25]
+        data.forEach(nb => {
+            const resultat = fizzBuzz(nb)
+            expect(resultat).toBe("Buzz")
+        })
+    })
+
+    test("si je lui donne un multiple de 3 et 5 , doit retourner FizzBuzz" , () => {
+        const data = [15,30, 45]
+        data.forEach(nb => {
+            const resultat = fizzBuzz(nb)
+            expect(resultat).toBe("FizzBuzz")
+        })
+    })
+    test("si je lui donne un chiffre qui n'est pas un multiple de 3 et 5 , doit retourner le chiffre" , () => {
+        const data = [1,2, 4]
+        data.forEach(nb => {
+            const resultat = fizzBuzz(nb)
+            expect(resultat).toBe(nb)
+        })
+    })
+})
 
 describe("fonction valeurAbsolue" , () => {
 
