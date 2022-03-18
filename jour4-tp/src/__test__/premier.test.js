@@ -1,4 +1,4 @@
-import { add } from "../lib/crud"
+import { add , valeurAbsolue } from "../lib/crud"
 
 // réaliser un test unitaire
 function addition( a, b  ){
@@ -12,6 +12,27 @@ function majuscule(text){
     if(text.length === 0) return "" ;
     return `${text[0].toUpperCase()}${text.slice(1,text.length).toLowerCase()}`
 }
+
+describe("fonction valeurAbsolue" , () => {
+
+    test("doit retourner 1 si on lui donne 1" , () => {
+        const resultat = valeurAbsolue(1)
+        expect(resultat).toEqual(1)
+    })
+    test("doit retourner -1 si on lui donne 1" , () => {
+        const resultat = valeurAbsolue(-1)
+        expect(resultat).toEqual(1)
+    })
+    test("doit retourner 0 si on lui donne 0 ou a []" , () => {
+        let resultat = valeurAbsolue(0)
+        expect(resultat).toEqual(0)
+        resultat = valeurAbsolue("a")
+        expect(resultat).toEqual(0)
+        resultat = valeurAbsolue([])
+        expect(resultat).toEqual(0)
+    })
+
+})
 
 describe("fonction add de crud.js" , () => {
     it("doit retourner une tableau avec un élément" , () => {
