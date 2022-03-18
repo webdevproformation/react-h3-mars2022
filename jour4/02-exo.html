@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*
 // créer le fichier 02-exo.html
 
 ce fichier contient la variable suivante :
@@ -11,3 +22,22 @@ modifier la valeur du point ayant l'id 1 pour sa valeur lat 10 => 40 (sans modif
 
 ajouter au début de la variable précédente la valeur suivante :
 {id:3 , lat : 44 , long : 22} 
+*/
+const state = [{id : 1 , lat: 10 , long : 20}]  ;
+
+const state1 = [...state , {id : 2, lat: 12 , long : -15}] ;
+
+const state2 = state1.map(function(etat){
+    const e = {...etat}
+    if(e.id == 1) e.lat = 40 ;
+    return e
+})
+
+const state3 = [{id:3 , lat : 44 , long : 22} , ...state2] ;
+
+console.log(state , state1 , state2 , state3);
+    </script>
+</body>
+</html>
+
+
