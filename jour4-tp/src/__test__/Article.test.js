@@ -11,4 +11,12 @@ describe("tester le composant Article" , () => {
         expect(resultat).toBeInTheDocument()
         expect(resultat.innerHTML ).toBe("titre principal")
     })  
+
+    test("le composant doit contenu une balise p contenant le texte lorem ipsum" , ()=> {
+        const {container }  = render(<Article />)
+        const resultat = container.querySelector("p")
+        expect(resultat).toBeInTheDocument()
+        expect(resultat.innerHTML ).toBe("lorem ipsum")
+    })
+    
 })

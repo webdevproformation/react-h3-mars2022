@@ -35,3 +35,11 @@ via un .map()
 ajouter pour chaque produit un bouton de suppression 
 
 créer la fonction qui permet de supprimer le produit concerné 
+
+------------------------
+
+// dans le fichier Article.test.js
+
+créer le deuxième test d'intégration qui permet de vérifier que le composant Article contient bien une balise p 
+ET
+que cette balise contient bien le texte "lorem ipsum"

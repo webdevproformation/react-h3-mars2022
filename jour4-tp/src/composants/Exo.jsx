@@ -23,14 +23,14 @@ export const Exo = () => {
     return <>
         <h1>Exo</h1>
         <form onSubmit={handleSubmit} className="exo">
-            <input type="text" value={form.nom} name="nom" onChange={handleChange} />
-            <input type="email" value={form.email} name="email" onChange={handleChange} />
-            <textarea value={form.commentaire} name="commentaire" onChange={handleChange}></textarea>
+            <input type="text" value={form.nom} name="nom" onChange={handleChange} id="nom"/>
+            <input type="email" value={form.email} name="email" onChange={handleChange} id="email"/>
+            <textarea value={form.commentaire} name="commentaire" onChange={handleChange} id="commentaire"></textarea>
             <div>
-                <input type="submit"  />
+                <input type="submit"  id="envoyer"/>
             </div>
         </form>
-        <div>
+        <div id="resultat">
             {resultat.map( (article, index) => {
                 return <article key={index}>
                     <h2>{article.nom}</h2>
