@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const jourSemaine = ["lundi", "mardi", "mercredi"]
+
+        // je veux ajouter le mot jeudi à la variable jourSemaine SANS la modifier 
+
+        //jourSemaine.push("jeudi") // ajouter la valeur MAIS je modifie la variable jourSemaine
+
+        const cloneJourSemaine = [...jourSemaine] ;
+        cloneJourSemaine.push("jeudi")
+
+        const cloneJourSemaine2 = [...jourSemaine , "jeudi"];
+
+        const panier = [{id : 1 , nom : "Nintendo" , prix :10}]
+        const clonePanier2 = [...panier];
+        clonePanier2.push({id:1 , nom: "PS5" , prix : 100})
+
+        const clonePanier = [...panier , {id:1 , nom: "PS5" , prix : 100}]
+
+        console.log(panier, clonePanier);
+
+        // unshift
+
+        const profils = [{id : 1 , nom : "Alain"}]
+
+        const cloneProfils = [...profils];
+        cloneProfils.unshift({id: 2 , nom : "Béatrice"})
+        
+        const cloneProfils2 = [{id: 2 , nom : "Béatrice"} , ...profils]
+
+        // supprimer un élément => splice()
+
+        const adresse = ["75 rue de Paris" , "90 rue de Marseille"];
+
+        const cloneAdresse = [...adresse];
+        cloneAdresse.splice(1 , 1)
+
+        const cloneAdresse2 = adresse.filter( adresse => adresse != "90 rue de Marseille"
+        
+        )
+
+
+        const articles = [{id : 1, titre : "articles"} , {id:2 , titre : "Article2"}]
+
+        // supprimer l'article qui a l'id 2 
+
+        const cloneArticles = articles.filter(article => article.id != 2)
+
+        // CRUD => Create / Read / Update / Delete 
+
+        const etudiants = [{id : 1 , note : 10}, {id: 2 , note : 15}];
+
+        // je veux augmenter de + 1 la note de l'étudiant qui a l'id 2
+
+        // etudiants[1].note++;
+
+        const cloneEtudiants = etudiants.map( etudiant => {
+            const e = {...etudiant}
+            if(etudiant.id == 2) e.note++
+            return e
+        } )
+
+        console.log(etudiants);
+        console.log(cloneEtudiants);
+
+        const cloneEtudiants2 = [];
+        etudiants.forEach(etudiant => {
+            const e = {...etudiant}
+            if(etudiant.id == 2) e.note++
+            cloneEtudiants2.push(e)
+        })
+        console.log(cloneEtudiants2);
+
+    </script>
+</body>
+</html>

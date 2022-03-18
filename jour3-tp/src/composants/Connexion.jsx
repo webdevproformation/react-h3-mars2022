@@ -12,10 +12,11 @@ export const Connexion = () => {
     function handleSubmit(e){
         e.preventDefault();
         console.log(form);
+        console.log(form.password , profil.password )
         if(form.login === profil.login && form.password === profil.password){
             // alert("vos identifiants sont corrects !!")
             profil.setProfil((prevProfil) => {
-                const cloneProfil = {...prevProfil , isLogged : true , password : "toto"}
+                const cloneProfil = {...prevProfil , isLogged : true }
                 localStorage.setItem("profil" , JSON.stringify(cloneProfil))
                 return cloneProfil; 
             })

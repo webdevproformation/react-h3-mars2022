@@ -1,0 +1,37 @@
+.App{
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+section{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:10px;
+}
+form{
+  display: grid;
+  gap:10px;
+  margin: 20px 0;
+}
+
+button , input, textarea{
+  background: none;
+  border:2px solid black;
+  padding : 8px 12px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 800ms;
+  font-family: inherit;
+}
+button, input[type="submit"] {
+  background: #ccc;
+}
+
+button:hover, input[type="submit"]:hover{
+  background: black;
+  color:white;
+}
