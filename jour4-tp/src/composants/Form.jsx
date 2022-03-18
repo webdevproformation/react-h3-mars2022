@@ -21,6 +21,12 @@ export const Form = () => {
         </form>
         <div>
             {JSON.stringify(articles)}
+            {articles.map((article, index) => {
+                return <article key={index}>
+                    <h2>{article.titre}</h2>
+                    <p>{article.contenu}</p>
+                </article>
+            })}
         </div>
     </>
 }

@@ -10,7 +10,7 @@ return
 <form>
 div => liste des articles 
 
-créer un nouveau composant => 
+créer un nouveau composant => Exo  
 state formulaire / et un deuxième state pour les résultats
 formulaire 
 3 champs 
