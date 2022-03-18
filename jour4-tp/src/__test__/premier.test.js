@@ -1,3 +1,4 @@
+import { add } from "../lib/crud"
 
 // réaliser un test unitaire
 function addition( a, b  ){
@@ -11,6 +12,15 @@ function majuscule(text){
     if(text.length === 0) return "" ;
     return `${text[0].toUpperCase()}${text.slice(1,text.length).toLowerCase()}`
 }
+
+describe("fonction add de crud.js" , () => {
+    it("doit retourner une tableau avec un élément" , () => {
+        const resultat = add([] , "élément");
+        expect(resultat.length).toBe(1);
+        expect(resultat).toContain("élément")
+        expect(resultat).toEqual(expect.arrayContaining(["élément"]))
+    })
+})
 
 describe("fonction majuscule" , () => {
     it("doit retourner Alain si on lui donne alain", () => {
