@@ -108,3 +108,4 @@ describe("découverte de la librairie de test jest" , () => {
 
 })
 
+// fonction de mock => jest.fn() => fonction de simulation 

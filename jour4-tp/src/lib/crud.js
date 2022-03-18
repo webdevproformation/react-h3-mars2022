@@ -16,3 +16,14 @@ export const fizzBuzz = (chiffre) => {
     if(chiffre % 3 === 0) return "Fizz";
     return chiffre ;
 }
+
+export function calculRemise(nb){
+    if(nb > 10) return 10;
+    return 0
+}
+
+// {id : 1 , nom : "alain" , nb : 20 , montant : 100}
+export const remise = (profil) => { 
+    const montant = calculRemise(profil.nb)
+    return (100 - montant) / 100 * profil.montant; 
+}
