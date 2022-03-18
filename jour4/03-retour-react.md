@@ -22,3 +22,16 @@ div en dessous
 
 lorsque vous soumettez le formulaire => modifier le state de résultat => 
 remplir la div avec les résultats saisis !
+
+--------------------------------
+
+créer un nouveau composant  Exo 2
+
+state resultat = [{id : 1 , nom : "Produit 1" },{id : 2 , nom : "Produit 2" } ]
+
+afficher dans la vue du composant les différents produits 
+.map()
+
+ajouter pour chaque produit un bouton de suppression 
+
+créer la fonction qui permet de supprimer le produit concerné 
